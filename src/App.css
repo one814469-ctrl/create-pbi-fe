@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+  color: #2d3748;
+}
+
+.app-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #2b6cb0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #718096;
+  margin-top: 3rem;
+}
+
+/* Epic Styles */
+.epic {
+  border-left: 5px solid #2b6cb0;
+  background: white;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.epic-title {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2b6cb0;
+}
+
+.epic-description {
+  margin: 0.5rem 0 1.25rem;
+  color: #4a5568;
+}
+
+.features {
+  margin-left: 1rem;
+  border-left: 2px solid #cbd5e0;
+  padding-left: 1rem;
+}
+
+.no-features {
+  font-style: italic;
+  color: #a0aec0;
+}
+
+/* Feature Styles */
+.feature {
+  background: #edf2f7;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.03);
+}
+
+.feature-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c5282;
+}
+
+.feature-description {
+  margin: 0 0 1rem;
+  color: #4a5568;
+}
+
+/* User Stories */
+.user-stories {
+  margin-left: 1rem;
+  border-left: 2px solid #a0aec0;
+  padding-left: 1rem;
+}
+
+.no-user-stories {
+  font-style: italic;
+  color: #a0aec0;
+}
+
+.user-story {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.user-story-title {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+  color: #1a202c;
+  font-size: 1.1rem;
+}
+
+.user-story-description {
+  margin: 0 0 0.4rem;
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.acceptance-criteria {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #2d3748;
+  background-color: #ebf8ff;
+  border-left: 4px solid #3182ce;
+  padding-left: 0.75rem;
+  border-radius: 0 5px 5px 0;
+}

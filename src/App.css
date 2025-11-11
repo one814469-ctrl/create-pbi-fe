@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #1a202c;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2b6cb0;
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar .active-link {
+  background-color: #1e40af;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: white;
+}
+
+.epic-page h1 {
+  margin-bottom: 0.3rem;
+}
+
+.user-stories-tabs {
+  display: flex;
+  margin: 1rem 0;
+  border-bottom: 2px solid #cbd5e0;
+  flex-wrap: wrap;
+}
+
+.user-stories-tabs .tab {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #2b6cb0;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s;
+  margin-right: 0.5rem;
+}
+
+.user-stories-tabs .tab:hover {
+  border-bottom: 3px solid #90cdf4;
+}
+
+.user-stories-tabs .tab.active {
+  border-bottom: 3px solid #2b6cb0;
+  color: #2b6cb0;
+}
+
+.user-story-content {
+  margin-top: 1rem;
+}
+
+.task {
+  margin-bottom: 2rem;
+  background: #edf2f7;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.task h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #2c5282;
+}
+
+/* Form styles */
+
+.form-container {
+  max-width: 400px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.form-field input,
+.form-field select {
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline-offset: 2px;
+  transition: border-color 0.2s;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #2b6cb0;
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+button[type="submit"] {
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+button[type="submit"]:disabled {
+  background-color: #90cdf4;
+  cursor: not-allowed;
+}
+
+/* Status Tracker Styles */
+.status-tracker p,
+.status-tracker .user-info p {
+  margin: 0.25rem 0;
+}
+
+.status-tracker button {
+  margin-top: 0.5rem;
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.status-tracker button:hover {
+  background-color: #1e40af;
+}
+
+/* Dashboard container */
+.dashboard {
+  max-width: 600px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0.25rem 1rem;
+  }
+  .sidebar ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .sidebar li {
+    margin: 0 0.5rem;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+}

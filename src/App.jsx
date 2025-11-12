@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="app-root">
       <header>
-        <h1>Smart Loan Processing System22</h1>
+        <h1>Smart Loan Processing System</h1>
         <nav>
           <ul className="epic-nav">
             {epicSlugs.map(({ slug, epic }) => (

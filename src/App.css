@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f8fc;
+}
+.app-root {
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+header {
+  background: #253858;
+  color: #fff;
+  padding: 18px 30px 7px 30px;
+}
+h1 {
+  margin: 0 0 10px 0;
+  letter-spacing: 0.04em;
+}
+.epic-nav {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+.epic-nav li a {
+  color: #aad8fd;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.14em;
+}
+.epic-nav li a.active,
+.epic-nav li a:focus,
+.epic-nav li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+main {
+  max-width: 850px;
+  margin: 36px auto;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(80,120,150,0.10);
+  padding: 34px 40px 44px 40px;
+  border-radius: 17px;
+}
+.epic-name {
+  font-size: 2em;
+  margin-bottom: 7px;
+  color: #253858;
+}
+.epic-desc {
+  color: #5e6c84;
+  margin-bottom: 35px;
+  font-size: 1.08em;
+}
+.user-story-block {
+  margin-bottom: 34px;
+  border-left: 4px solid #0065ff24;
+  background: #f4f8fc;
+  padding: 14px 22px 12px 22px;
+  border-radius: 14px;
+}
+.user-story-name {
+  font-size: 1.18em;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #222b45;
+}
+.user-story-desc {
+  margin-bottom: 18px;
+  color: #64748b;
+}
+.generic-tasks-list {
+  margin: 1em 0 0 1em;
+  color: #475569;
+}
+label {
+  font-weight: 500;
+  display: block;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  font-size: 1em;
+  padding: 7px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+button {
+  background: #0065ff;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+button:active {
+  background: #3756a6;
+}
+.table-users,
+.table-boards {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+.table-users th, .table-users td,
+.table-boards th, .table-boards td {
+  border: 1px solid #eaeaea;
+  padding: 8px 10px;
+  text-align: left;
+}
+.remove-user-btn {
+  background: #e11d48;
+  margin: 0 7px;
+  padding: 6px 16px;
+}
+.remove-user-btn:hover {
+  background: #be123c;
+}
+.success-msg {
+  background: #d1fae5;
+  border-left: 5px solid #4ade80;
+  color: #166534;
+  padding: 9px 14px;
+  border-radius: 6px;
+  margin-top: 9px;
+}
+.error-msg {
+  background: #fee2e2;
+  border-left: 5px solid #ef4444;
+  color: #991b1b;
+  padding: 9px 14px;
+  border-radius: 6px;
+  margin-top: 9px;
+}

@@ -1,0 +1,69 @@
+Project Charter: Smart Loan Processing System
+
+1. Project Overview
+The Smart Loan Processing System (SLPS) aims to streamline the loan application and approval process for FinTrust Bank by automating document verification, credit scoring, and approval workflows. The system will reduce manual effort, improve turnaround time, and enhance the customer experience through a digital self-service portal.
+________________________________________
+2. Business Objectives
+• Reduce loan approval time from 7 days to 24 hours.
+• Minimize manual data entry by at least 60% through automation.
+• Increase customer satisfaction (CSAT score) by 25% within six months of launch.
+• Improve compliance tracking for all loan applications.
+________________________________________
+3. Project Scope
+In Scope
+• Web-based Loan Application Portal for customers.
+• Internal Dashboard for Loan Officers and Underwriters.
+• Integration with:
+  o Credit Bureau API (for credit checks)
+  o Document OCR service (for ID and income document verification)
+  o Core Banking System (for final approval and disbursement)
+• Automated Notifications and Reminders via email and SMS.
+• Basic Reporting and Analytics dashboard.
+Out of Scope
+• Mobile app version (future phase).
+• Integration with third-party financial advisors.
+• Loan products outside of personal and home loans.
+________________________________________
+4. Key Stakeholders
+Role | Name | Responsibility
+Project Sponsor | Sarah Johnson, CFO | Approves funding and strategic direction
+Product Owner | Mark Liu | Prioritizes backlog, defines MVP
+Business Analyst | [You] | Requirements gathering, user story creation
+Technical Lead | Priya Nair | Architecture and API integration
+QA Lead | James Smith | Test planning and execution
+UX Designer | Aisha Khan | User interface design and usability testing
+________________________________________
+5. High-Level Deliverables
+1. Loan Application Portal (Customer-facing)
+2. Loan Management Dashboard (Employee-facing)
+3. Automated Document Verification Service
+4. Credit Check Integration Module
+5. Notification & Reporting System
+________________________________________
+6. Assumptions
+• All external APIs (Credit Bureau, OCR) will be available and provide sandbox environments.
+• User authentication will leverage FinTrust Bank’s existing single sign-on (SSO) service.
+• Regulatory requirements remain stable during project execution.
+________________________________________
+7. Constraints
+• Budget capped at $250,000.
+• Delivery timeline: 5 months (Jan–May 2026).
+• Must comply with GDPR and local data protection laws.
+________________________________________
+8. Risks
+Risk | Impact | Mitigation
+API unavailability from Credit Bureau | High | Implement fallback manual verification process
+Delays in document verification model tuning | Medium | Prioritize human-assisted verification initially
+User resistance to new system | Medium | Conduct user training and pilot testing
+________________________________________
+9. Success Metrics
+• 80% of loan applications processed automatically.
+• Less than 5% manual intervention per loan type.
+• 90% uptime during business hours.
+• 90% customer satisfaction post-launch survey.
+________________________________________
+10. Approval Signatures
+Role | Name | Signature | Date
+Project Sponsor | Sarah Johnson |  |  
+Product Owner | Mark Liu |  |  
+Project Manager | Emily Carter |  |

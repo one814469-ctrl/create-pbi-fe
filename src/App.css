@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f8fc;
+}
+
+.app-root {
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+header {
+  background: #253858;
+  color: #fff;
+  padding: 18px 30px 7px 30px;
+}
+h1 {
+  margin: 0 0 10px 0;
+  letter-spacing: 0.04em;
+}
+.epic-nav {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+.epic-nav li a {
+  color: #aad8fd;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.14em;
+}
+.epic-nav li a.active,
+.epic-nav li a:focus,
+.epic-nav li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+main {
+  max-width: 940px;
+  margin: 36px auto;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(80,120,150,0.10);
+  padding: 40px 45px 46px 45px;
+  border-radius: 17px;
+}
+.epic-name {
+  font-size: 2em;
+  margin-bottom: 7px;
+  color: #253858;
+}
+.epic-desc {
+  color: #5e6c84;
+  margin-bottom: 29px;
+  font-size: 1.08em;
+}
+.prd-section {
+  background: #e5e7eb;
+  color: #444;
+  font-size: 0.99em;
+  border-left: 4px solid #0567d2;
+  padding: 8px 16px 8px 18px;
+  border-radius: 8px;
+  margin: 10px 0 37px 0;
+  white-space: pre-line;
+}
+.user-story-block {
+  margin-bottom: 34px;
+  border-left: 4px solid #06b6d421;
+  background: #f4fafd;
+  padding: 16px 22px 14px 22px;
+  border-radius: 15px;
+}
+.user-story-name {
+  font-size: 1.14em;
+  margin-bottom: 2px;
+  font-weight: 500;
+  color: #1e293b;
+}
+.user-story-desc {
+  margin-bottom: 13px;
+  color: #556987;
+}
+label {
+  font-weight: 500;
+  display: block;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  font-size: 1em;
+  padding: 7px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+button {
+  background: #0065ff;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+button:active {
+  background: #3756a6;
+}
+.table-users,
+.table-apps,
+.table-boards {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+.table-users th, .table-users td,
+.table-apps th, .table-apps td,
+.table-boards th, .table-boards td {
+  border: 1px solid #eaeaea;
+  padding: 8px 10px;
+  text-align: left;
+}
+.remove-btn {
+  background: #e11d48;
+  margin: 0 7px;
+  padding: 6px 16px;
+}
+.remove-btn:hover {
+  background: #be123c;
+}
+.success-msg {
+  background: #d1fae5;
+  border-left: 5px solid #4ade80;
+  color: #166534;
+  padding: 9px 14px;
+  border-radius: 6px;
+  margin-top: 9px;
+}
+.error-msg {
+  background: #fee2e2;
+  border-left: 5px solid #ef4444;
+  color: #991b1b;
+  padding: 9px 14px;
+  border-radius: 6px;
+  margin-top: 9px;
+}
+.notification {
+  background: #b7eafb;
+  color: #055160;
+  border-left: 5px solid #0284c7;
+  padding: 9px 14px;
+  border-radius: 6px;
+  margin-top: 9px;
+}
+.progress-tracker {
+  background: #f0fdfa;
+  border-left: 4px solid #0ea5e9;
+  border-radius: 6px;
+  margin: 17px 0 4px 0;
+  padding: 10px 23px 10px 17px;
+}
+.progress-item {
+  margin: 2px 0;
+}
+.progress-item.done {
+  color: #059669;
+  font-weight: bold;
+}
+.progress-item.current {
+  color: #0ea5e9;
+}
+.progress-item.pending {
+  color: #64748b;
+}
+.chart-bar-container {
+  max-width: 320px;
+  margin: 7px 0 13px 0;
+}
+.chart-bar-label {
+  font-size: 0.99em;
+  margin-right: 10px;
+  min-width: 60px;
+  display: inline-block;
+}
+.chart-bar {
+  display: inline-block;
+  height: 15px;
+  background: #38bdf8;
+  border-radius: 5px;
+  vertical-align: middle;
+  transition: width 0.3s;
+}
+.chart-bar-value {
+  margin-left: 12px;
+  color: #333;
+  font-size: 0.97em;
+}

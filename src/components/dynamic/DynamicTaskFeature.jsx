@@ -431,5 +431,3 @@ function MiniChart({ data, title }) {
     </div>
   );
 }
-
-<!-- verification: all PBIs + PRD objectives mapped and validated ✅ -->

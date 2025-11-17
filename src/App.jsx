@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="main-header">
-        <h1>Smart Loan Processing System</h1>
+        <h1>Smart Loan Processing System [Beta Stage]</h1>
         <nav className="main-nav">
           <ul>
             {epics.map(epic => (

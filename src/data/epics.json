@@ -1,0 +1,135 @@
+[
+  {
+    "title": "Epic 1 - Loan Application Portal",
+    "description": "Develop a customer-facing portal to allow applicants to submit loan requests, upload documents, and track application status.",
+    "userStories": [
+      {
+        "title": "User Story 1 - Loan Application Form",
+        "description": "As a customer, I want to complete and submit a loan application form online so that I can apply for a loan without visiting the bank.",
+        "tasks": [
+          {
+            "title": "Task 1 - Design Loan Application Form UI",
+            "description": "Create responsive and accessible web forms for personal and home loans.",
+            "acceptance_criteria": [
+              "Form fields align with loan requirements.",
+              "Validation is applied to all mandatory fields.",
+              "Supports both personal and home loan types."
+            ]
+          },
+          {
+            "title": "Task 2 - Implement Application Submission Logic",
+            "description": "Connect form submission to backend API for loan data persistence.",
+            "acceptance_criteria": [
+              "Loan data saved to database via API.",
+              "Confirmation message displayed upon successful submission."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "User Story 2 - Application Status Tracking",
+        "description": "As a customer, I want to track my loan application status so that I stay informed throughout the process.",
+        "tasks": [
+          {
+            "title": "Task 1 - Build Status Tracker Component",
+            "description": "Create UI component to display real-time application progress.",
+            "acceptance_criteria": [
+              "Displays status: Submitted, Under Review, Approved, or Rejected.",
+              "Updates dynamically via backend API."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Epic 2 - Automated Document Verification",
+    "description": "Automate document verification using OCR to reduce manual processing time and improve accuracy.",
+    "userStories": [
+      {
+        "title": "User Story 1 - Document Upload & OCR Processing",
+        "description": "As a user, I want the system to automatically verify my uploaded documents so that I don't have to manually validate them.",
+        "tasks": [
+          {
+            "title": "Task 1 - Integrate OCR API",
+            "description": "Connect with external OCR service for identity and income document verification.",
+            "acceptance_criteria": [
+              "OCR API successfully extracts text from uploaded documents.",
+              "Verification status returned and stored in system."
+            ]
+          },
+          {
+            "title": "Task 2 - Handle Verification Failures",
+            "description": "Implement fallback for failed OCR checks.",
+            "acceptance_criteria": [
+              "System flags failed verifications for manual review.",
+              "Users receive notification for re-upload if required."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Epic 3 - Credit Check Integration",
+    "description": "Connect with external credit bureaus to assess applicant creditworthiness automatically.",
+    "userStories": [
+      {
+        "title": "User Story 1 - Credit Bureau Integration",
+        "description": "As a loan officer, I want the system to automatically fetch credit scores from the Credit Bureau API so that I can make informed approval decisions.",
+        "tasks": [
+          {
+            "title": "Task 1 - Implement API Integration",
+            "description": "Connect backend to Credit Bureau API using secure authentication.",
+            "acceptance_criteria": [
+              "Credit score fetched successfully for each applicant.",
+              "API error handling implemented for unavailability."
+            ]
+          },
+          {
+            "title": "Task 2 - Display Credit Data in Dashboard",
+            "description": "Show fetched credit data on the loan management dashboard.",
+            "acceptance_criteria": [
+              "Credit score visible in application details view.",
+              "System logs each API request for compliance."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Epic 4 - Notifications and Reporting",
+    "description": "Develop automated notifications and reporting capabilities for both customers and administrators.",
+    "userStories": [
+      {
+        "title": "User Story 1 - Notification System",
+        "description": "As a user, I want to receive automated notifications about my loan status so that I stay updated without manual follow-ups.",
+        "tasks": [
+          {
+            "title": "Task 1 - Integrate Email & SMS Services",
+            "description": "Connect with Twilio and SendGrid for SMS and email notifications.",
+            "acceptance_criteria": [
+              "Notifications sent when loan status changes.",
+              "SMS and email templates are customizable."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "User Story 2 - Reporting Dashboard",
+        "description": "As an administrator, I want a reporting dashboard to analyze loan application trends and system performance.",
+        "tasks": [
+          {
+            "title": "Task 1 - Build Reporting Dashboard UI",
+            "description": "Create analytics dashboard with charts and KPIs.",
+            "acceptance_criteria": [
+              "Displays total applications, approvals, and rejections.",
+              "Reports exportable as PDF or CSV."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
